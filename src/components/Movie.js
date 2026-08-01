@@ -16,7 +16,7 @@ function Movie({id, medium_cover_image, title, summary, genres}) {
               )}
             </ul>
             <p>
-              {summary}
+              {summary.length > 235 ? `${summary.slice(0, 235)}` : summary}
             </p>
         </div>
     );
